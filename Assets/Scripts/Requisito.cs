@@ -1,10 +1,8 @@
+using System;
+
+[Serializable]
 public class Requisito
 {
-    string nome;
-    int dificuldade;
-
-    Requisito(string nome, int dificuldade) {
-        this.nome = nome;
-        this.dificuldade = dificuldade;
-    }
+    public string nome;
+    public int dificuldade;
 }

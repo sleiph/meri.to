@@ -1,24 +1,15 @@
-public class Curriculo
+using System;
+
+[Serializable]
+public class Vaga
 {
-    string id;
+    public string id;
 
-    Empresa empresa;
-    string cargo;
-    double salario;
-    bool isRemoto;
+    public Empresa empresa;
+    public string cargo;
+    public double salario;
+    public bool isRemoto;
 
-    string[] atividades;
-    Requisito[] requisitos;
-
-    public Curriculo (
-        Empresa empresa, string cargo, double salario, bool isRemoto,
-        string[] atividades, Requisito[] requisitos
-    ) {
-        this.empresa = empresa;
-        this.cargo = cargo;
-        this.salario = salario;
-        this.isRemoto = isRemoto;
-        this.atividades = atividades;
-        this.requisitos = requisitos;
-    }
+    public string[] atividades;
+    public Requisito[] requisitos;
 }
